@@ -1,3 +1,15 @@
+#ifdef HW_HAVE_NETWORK_EPCAN
+SH_DEF(net_survey)
+#endif /* HW_HAVE_NETWORK_EPCAN */
+#ifdef HW_HAVE_NETWORK_EPCAN
+SH_DEF(net_assign)
+#endif /* HW_HAVE_NETWORK_EPCAN */
+#ifdef HW_HAVE_NETWORK_EPCAN
+SH_DEF(net_revoke)
+#endif /* HW_HAVE_NETWORK_EPCAN */
+#ifdef HW_HAVE_NETWORK_EPCAN
+SH_DEF(net_node_remote)
+#endif /* HW_HAVE_NETWORK_EPCAN */
 SH_DEF(flash_prog)
 SH_DEF(flash_info)
 SH_DEF(flash_wipe)
@@ -27,25 +39,6 @@ SH_DEF(pm_fsm_shutdown)
 SH_DEF(pm_default_config)
 SH_DEF(pm_default_machine)
 SH_DEF(pm_default_scale)
-SH_DEF(tlm_default)
-SH_DEF(tlm_grab)
-SH_DEF(tlm_watch)
-SH_DEF(tlm_stop)
-SH_DEF(tlm_flush_sync)
-SH_DEF(tlm_live_sync)
-SH_DEF(help)
-#ifdef HW_HAVE_NETWORK_EPCAN
-SH_DEF(net_survey)
-#endif /* HW_HAVE_NETWORK_EPCAN */
-#ifdef HW_HAVE_NETWORK_EPCAN
-SH_DEF(net_assign)
-#endif /* HW_HAVE_NETWORK_EPCAN */
-#ifdef HW_HAVE_NETWORK_EPCAN
-SH_DEF(net_revoke)
-#endif /* HW_HAVE_NETWORK_EPCAN */
-#ifdef HW_HAVE_NETWORK_EPCAN
-SH_DEF(net_node_remote)
-#endif /* HW_HAVE_NETWORK_EPCAN */
 SH_DEF(pm_self_test)
 SH_DEF(pm_self_adjust)
 SH_DEF(pm_adjust_dcu_voltage)
@@ -60,3 +53,10 @@ SH_DEF(hal_DBGMCU_mode_stop)
 SH_DEF(reg)
 SH_DEF(enum_reg)
 SH_DEF(config_reg)
+SH_DEF(help)
+SH_DEF(tlm_default)
+SH_DEF(tlm_grab)
+SH_DEF(tlm_watch)
+SH_DEF(tlm_stop)
+SH_DEF(tlm_flush_sync)
+SH_DEF(tlm_live_sync)

@@ -1,9 +1,9 @@
-HWREV	?= PHOBIA_rev5
+HWREV	?= ESCPractice
 
 include hal/mk/$(HWREV).d
 
-BUILD	?= /tmp/pmc-$(HWREV)
-LOG	?= /tmp/phobia.log
+BUILD	?= ../build/pmc-$(HWREV)
+LOG	?= ../build/log/phobia-$(HWREV).log
 
 TARGET	= $(BUILD)/pmc-$(HWREV)
 IMAGE	= $(TARGET).bin

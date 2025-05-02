@@ -117,8 +117,8 @@ void ADC_const_build()
 	if (		hal.MCU_ID == MCU_ID_GD32F405
 			|| *TS_110 == *TS_30) {
 
-		hal.const_ADC.TS[1] = 0.323f;
-		hal.const_ADC.TS[0] = -279.f;
+		hal.const_ADC.TS[1] = -227.3f * hal.const_ADC.GS;
+		hal.const_ADC.TS[0] = 343.2f;
 	}
 #endif /* STM32F4 */
 

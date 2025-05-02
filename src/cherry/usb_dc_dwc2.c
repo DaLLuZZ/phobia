@@ -550,8 +550,7 @@ int usb_dc_init(void)
     USB_LOG_INFO("=================================\r\n");
 
     if (endpoints < CONFIG_USBDEV_EP_NUM) {
-        USB_LOG_ERR("dwc2 has less endpoints than config, please check\r\n");
-	return -1;
+        USB_LOG_ERR("dwc2 has less endpoints (%d) than config (%d), please check\r\n", endpoints, CONFIG_USBDEV_EP_NUM);
     }
 
     if ((hsphy_type == 0) && (CONFIG_USB_DWC2_RAM_SIZE != 1280)) {

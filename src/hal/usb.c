@@ -71,7 +71,7 @@ void usb_dc_low_level_init(void)
 	}
 	else if (hal.MCU_ID == MCU_ID_GD32F405) {
 
-		USB_OTG_FS->GCCFG = (0x000DU << 16);	/* PWRON | VBUSACEN | VBUSBCEN */
+		USB_OTG_FS->GCCFG = (0x002DU << 16);	/* VBUSIG | PWRON | VBUSACEN | VBUSBCEN */
 	}
 #elif defined(STM32F7)
 	USB_OTG_FS->GOTGCTL |= USB_OTG_GOTGCTL_BVALOVAL | USB_OTG_GOTGCTL_BVALOEN;

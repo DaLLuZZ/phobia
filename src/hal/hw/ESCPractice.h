@@ -23,7 +23,10 @@
 #define HW_ADC_AMPLIFIER_GAIN		31.f		/* 3 x LMV321 based instrumential amplifier */
 
 #define HW_ADC_VOLTAGE_R1		470000.f
-#define HW_ADC_VOLTAGE_R2		27000.f
+#define HW_ADC_VOLTAGE_R2		22000.f
+
+#define HW_ADC_TERMINAL_R1		470000.f
+#define HW_ADC_TERMINAL_R2		22000.f
 
 #define HW_ADC_KNOB_R1			0.f			/* have no */
 #define HW_ADC_KNOB_R2			10000.f

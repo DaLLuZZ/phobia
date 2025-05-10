@@ -1,4 +1,4 @@
-BUILD	?= /tmp/bench
+BUILD	?= ../build/bench
 TARGET	= $(BUILD)/bench
 
 CC	= gcc

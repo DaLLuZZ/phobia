@@ -1,7 +1,7 @@
 #!/usr/bin/env gp
 # vi:ft=conf
 
-load 0 0 float 100 "/tmp/pm-TLM"
+load 0 0 float 100 "pm-TLM"
 
 group 0 0
 deflabel 0 "(s)"
@@ -61,5 +61,5 @@ figure 0 22 "m.iC"
 
 page "------------------------------"
 
-include "/tmp/pm-auto.gp"
+include "pm-auto.gp"
 

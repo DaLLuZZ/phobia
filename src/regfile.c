@@ -1871,6 +1871,8 @@ const reg_t		regfile[] = {
 
 	REG_DEF(pm.fsm_req,,,			"",	"%0i",	0, NULL, NULL),
 	REG_DEF(pm.fsm_state,,,			"",	"%0i",	REG_READ_ONLY, NULL, NULL),
+	REG_DEF(pm.fsm_phase,,,			"",	"%0i",	REG_READ_ONLY, NULL, NULL),
+	REG_DEF(pm.fsm_subi,,,			"",	"%0i",	REG_READ_ONLY, NULL, NULL),
 	REG_DEF(pm.fsm_errno,,,			"",	"%0i",	REG_READ_ONLY, NULL, &reg_format_enum),
 
 	REG_DEF(pm.tm_transient_slow,,,		"ms",	"%1f",	REG_CONFIG, NULL, NULL),
